@@ -1,0 +1,65 @@
+menu "Deskimon application"
+    config DSK_TCP_PORT
+        int "Mac Agent TCP port"
+        default 8765
+    config DSK_DISCOVERY_PORT
+        int "UDP discovery port"
+        default 8766
+    config DSK_DEFAULT_SSID
+        string "Default Wi-Fi SSID (optional - normally provisioned over BLE)"
+        default ""
+    config DSK_DEFAULT_PASS
+        string "Default Wi-Fi password (optional)"
+        default ""
+    config DSK_FW_VERSION
+        string "Firmware version string"
+        default "1.0.0"
+    config DSK_ENABLE_AUDIO
+        bool "Enable onboard microphone and speaker (HARDWARE TEST REQUIRED)"
+        default y
+
+    menu "Wake-word detection"
+        config DSK_WW_ENERGY_THRESHOLD
+            int "RMS energy threshold — minimum amplitude to count as speech"
+            default 1800
+            range 300 10000
+            help
+                RMS counts (0-32767). Speech in a quiet room is typically 1500-4000.
+                Raise to 3000-5000 in a noisy environment.
+                Lower to 800-1200 if the mic is far from your mouth.
+                UPGRADE: replace process_frame() with Porcupine for 'Hey Deskimon'.
+        config DSK_WW_SPEECH_MIN_MS
+            int "Minimum speech duration to trigger (ms)"
+            default 400
+            range 150 1000
+            help
+                How long you must speak before Deskimon wakes up.
+                400 ms ≈ length of 'hey' or a hand clap followed by pause.
+                Raise to 600-800 to require a longer phrase like 'Hey Deskimon'.
+        config DSK_WW_SPEECH_MAX_MS
+            int "Maximum speech duration accepted as a wake phrase (ms)"
+            default 2500
+            range 500 5000
+            help
+                Phrases longer than this are ignored (background conversation, music).
+                2500 ms comfortably covers 'Hey Deskimon'.
+        config DSK_WW_PAUSE_MS
+            int "Silence gap after phrase that fires the trigger (ms)"
+            default 180
+            range 80 500
+            help
+                How long the board waits for silence after speech ends before triggering.
+                180 ms avoids firing mid-word while still feeling responsive.
+        config DSK_WW_COOLDOWN_MS
+            int "Cooldown after trigger before next detection (ms)"
+            default 3000
+            range 1000 10000
+        config DSK_MIC_DIAG
+            bool "Enable microphone diagnostic logging (once per second)"
+            default n
+            help
+                Logs RMS, peak, sample count and change rate every second.
+                Uses the same I2S reads as the wakeword task — no extra overhead.
+                Set to n for all production / release builds.
+    endmenu
+endmenu

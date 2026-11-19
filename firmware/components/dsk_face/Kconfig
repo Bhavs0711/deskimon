@@ -1,0 +1,12 @@
+menu "Deskimon face"
+    config DSK_FACE_RING
+        bool "Enable full-screen status ring effects"
+        default y
+        help
+            The glow ring (listening / alert / processing) invalidates the whole 360x360 area, so it
+            is rendered at a reduced frame rate. Disable to maximise eye animation smoothness.
+    config DSK_FACE_FPS
+        int "Face animation frame rate"
+        default 30
+        range 10 60
+endmenu

@@ -1,0 +1,21 @@
+[1/13] Performing build step for 'bootloader'
+[1/1] cd /Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader/esp-idf/esptool_py && /Users/aayushgugnani/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/aayushgugnani/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader/bootloader.bin
+Bootloader binary size 0x5800 bytes. 0x2800 bytes (31%) free.
+[2/13] No install step for 'bootloader'
+[3/13] Linking C static library esp-idf/dsk_board/libdsk_board.a
+[4/13] Completed 'bootloader'
+[5/13] Linking C static library esp-idf/dsk_face/libdsk_face.a
+[6/13] Building C object esp-idf/dsk_app/CMakeFiles/__idf_dsk_app.dir/dsk_app.c.obj
+[7/13] Linking C static library esp-idf/dsk_app/libdsk_app.a
+[8/13] Linking C static library esp-idf/main/libmain.a
+[9/13] Generating ld/sections.ld
+[10/13] Building C object CMakeFiles/deskimon.elf.dir/project_elf_src_esp32s3.c.obj
+[11/13] Linking CXX executable deskimon.elf
+[12/13] Generating binary image from built executable
+esptool.py v4.13.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/deskimon.bin
+[13/13] cd /Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/esp-idf/esptool_py && /Users/aayushgugnani/.espressif/python_env/idf5.2_py3.13_env/bin/python /Users/aayushgugnani/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/partition_table/partition-table.bin /Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/deskimon.bin
+deskimon.bin binary size 0x152480 bytes. Smallest app partition is 0x600000 bytes. 0x4adb80 bytes (78%) free.

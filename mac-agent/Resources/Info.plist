@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key><string>com.deskimon.agent</string>
+    <key>CFBundleName</key><string>Deskimon Agent</string>
+    <key>CFBundleDisplayName</key><string>Deskimon Agent</string>
+    <key>CFBundleExecutable</key><string>DeskimonAgent</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.0.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSMinimumSystemVersion</key><string>14.0</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSCalendarsFullAccessUsageDescription</key><string>Deskimon creates, moves, lists and cancels your calendar events when you ask.</string>
+    <key>NSCalendarsUsageDescription</key><string>Deskimon manages your calendar events when you ask.</string>
+    <key>NSRemindersFullAccessUsageDescription</key><string>Deskimon creates reminders and deadlines when you ask.</string>
+    <key>NSRemindersUsageDescription</key><string>Deskimon creates reminders when you ask.</string>
+    <key>NSContactsUsageDescription</key><string>Deskimon looks up email addresses of people you name in drafts.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key><string>Deskimon pairs with and talks to your Deskimon desk device over Bluetooth.</string>
+    <key>NSMicrophoneUsageDescription</key><string>Deskimon listens when you dictate a command on your Mac.</string>
+    <key>NSSpeechRecognitionUsageDescription</key><string>Deskimon turns your spoken commands into text.</string>
+    <key>NSLocalNetworkUsageDescription</key><string>Deskimon talks to your Deskimon device on your local network.</string>
+    <key>NSAppleEventsUsageDescription</key><string>Deskimon asks Apple Mail to send an email only after you approve it.</string>
+</dict>
+</plist>

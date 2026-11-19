@@ -1,0 +1,17 @@
+menu "Deskimon board"
+    config DSK_LCD_PCLK_MHZ
+        int "LCD QSPI clock (MHz)"
+        default 80
+        range 20 80
+        help
+            Waveshare's reference board config uses 80 MHz. If you see colour noise or
+            tearing, drop this to 40.
+    config DSK_LVGL_BUF_LINES
+        int "LVGL partial draw buffer height (lines)"
+        default 40
+        range 10 120
+    config DSK_BACKLIGHT_DEFAULT
+        int "Default backlight percent"
+        default 80
+        range 5 100
+endmenu

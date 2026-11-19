@@ -1,0 +1,28 @@
+# ---- Python / Kokoro server ----
+.venv-kokoro/
+__pycache__/
+*.pyc
+*.pyo
+
+# ---- Large model assets (auto-downloaded by run_kokoro.sh) ----
+models/kokoro/kokoro-v1.0.onnx
+models/kokoro/voices-v1.0.bin
+models/kokoro/Kokoro-82M-refs/.cache/
+
+# ---- Swift / Xcode build outputs ----
+mac-agent/.build/
+*.o
+*.d
+
+# ---- Release bundles (built by scripts/build_mac_agent.sh) ----
+release/mac-agent/
+
+# ---- Secrets / credentials (never commit these) ----
+.env
+*.pem
+*.key
+*.p12
+
+# ---- macOS noise ----
+.DS_Store
+*.DS_Store

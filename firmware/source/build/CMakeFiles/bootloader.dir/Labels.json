@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/Users/aayushgugnani/Downloads/Deskimon_Final/firmware/source/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

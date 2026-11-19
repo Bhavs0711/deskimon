@@ -1,0 +1,3 @@
+/Users/aayushgugnani/Downloads/Deskimon_Final/simulator/build/CMakeFiles/deskimon_sim.dir
+/Users/aayushgugnani/Downloads/Deskimon_Final/simulator/build/CMakeFiles/edit_cache.dir
+/Users/aayushgugnani/Downloads/Deskimon_Final/simulator/build/CMakeFiles/rebuild_cache.dir

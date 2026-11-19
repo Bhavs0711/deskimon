@@ -1,0 +1,9 @@
+menu "Deskimon hardware tests"
+    config DSK_SPEAKER_TEST
+        bool "Run speaker hardware test at boot (plays 440 Hz for 2 s then continues)"
+        default n
+        help
+            When enabled, app_main() plays a 440 Hz sine wave through the PCM5101
+            DAC (I2S1, GPIO 47/38/48) before starting the normal Deskimon application.
+            Set to n for all production builds.
+endmenu
